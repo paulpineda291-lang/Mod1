@@ -6,8 +6,10 @@ $cost = 5;
 
 $subtotal = computeSubtotal($items, $cost);
 $tax = computeTax($subtotal);
+$bonus = 5;
 $discount = computeDiscount($subtotal);
-$total = computeTotal($subtotal, $tax, $discount);
+
+$total = computeTotal($subtotal, $tax, $discount, $bonus);
 
 $warning = ($items > 10) ? " You are buying a large quantity!" : "";
 ?>
@@ -38,10 +40,10 @@ $warning = ($items > 10) ? " You are buying a large quantity!" : "";
 
 <h2>Store Info</h2>
 <p>We offer a wide selection of craft beers from around the world.</p>
-<p>Visit us for seasonal specials and exclusive brews!</p>
 
 <h2>Customer Support</h2>
-<p>Need help? Contact us at <a href="mailto:support@mybeershop.com">support@mybeershop.com</a></p>
+<p>Need help? Contact us at 
+<a href="mailto:support@mybeershop.com">support@mybeershop.com</a></p>
 
 </body>
 </html>
